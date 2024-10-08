@@ -6,3 +6,9 @@
 <p [innerText]="title"></p> 
 <img [src]="imageUrl" alt="Angular Logo" width="100" height="100">
 
+<h1>Two way binding</h1>
+<input [(ngModel)] = 'name' type="text"> 
+
+<app-child [message]="parentMessage" (messageEvent) = "receiveMessage($event)"></app-child>
+<h1>{{childMessage}}</h1>
+
